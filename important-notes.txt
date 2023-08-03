@@ -1,0 +1,96 @@
+************************************* Versiones **********************************************
+- Mongo: 6.0.6
+- npm: 9.7.2
+- node: 18.16.0
+***********************************************************************************************
+
+********************************** Extensiones ************************************************
+- Para ver todo más claro en el editor, sin scroll, presionar F1, escoger Open Settings JSON y agregar esta línea: "editor.wordWrap": "on"  
+- Extención: Prettier - Code formatter - para configurar: f1, luego escribir "format document" y elegir Prettier. Sólo en los archivos con código. Luego Ctrl+Shift+i para formatear el código.
+
+**********************************************************************************************
+
+************************************* Server ***********************************************
+- Para usar "import" en lugar de "require()" debes agregar en packagejson -> "type": "module" despues de "main": "index.js"
+- npm init -y
+- npm i express bcryptjs cors dotenv jsonwebtoken mongoose morgan helmet
+- npm i nodemon -D
+- npm i cookie-parser
+- npm i zod  - para validar los datos y esquemas antes de que lleguen al backend. https://zod.dev/
+- npm i cors - Sirve para hacer que todos los dominios se puedan comunicar con el backend.
+
+Librerias:
+- cors:
+- zod: esta libreria se utiliza para validar datos en el backend o frontend. 
+- helmet:
+- cookie-parser: esta librería nos permite leer las cookies.
+- bcryptjs: sirve para encriptar el password.
+- dotenv:
+- morgan: permite ver por consola las peticiones que van llegando al servidor.
+
+Carpetas:
+- schemas: para validar los datos y/o esquemas que se reciben en el backend. utiliza la boblioteca "zod" 
+- middlewares: sirven para indicar que rutas estan protegidas y son para ciertos usuarios             autenticados. En realidad crean un "if" para validar ciertas condiciones antes de continuar con otras tareas.
+- libs: para escribir código que se puede reimportar varias veces. 
+- config.js: En este archivo ponemos configuraciónes o datos globales para todo el proyecto.
+*********************************************************************************************
+
+****************************************** Client *********************************************
+- npm install create-vite
+- npm create vite
+- npm install 
+- npm run dev
+
+- https://tailwindcss.com/docs/guides/vite
+- Instalar extensión: Tailwind CSS IntelliSense
+- npm i react-router-dom  : para simular el enrutado desde el frontend.
+- npm i react-hook-form   : Este módulo nos maneja el cambio de estado y la validación de los formularios.
+- npm i axios   : Es una biblioteca que engloba fetch. USa fetch por debajo. 
+- npm i js-cookie
+- npm i dayjs
+
+Comandos:
+- rfce - te crea el form de una función.
+- clg - para escribir console.log()
+- { } : las llaves en React nos permiten ejecutar código.
+- <> </>: A esta etiqueta se le llama fragment y es un contenedor vacío, no ocupa espacios.
+- Para los emojis, ver la página: https://unicode.org/emoji/charts/emoji-list.html#face-smiling 
+- JSON.stringify: conviente un objeto de javascript en su versión string o texto.
+
+Notas:
+- Los nombres de las funciones que forman un componente y el archivo donde está esa función deben empezar con mayúscula. 
+
+- https://tailwindcss.com/docs/guides/vite
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init -p
+
+Extensiones de VS:
+- ES7 react/Redux/React-Native snippets
+- EditorConfig for VS Code
+- Prettier - Code formatter
+- Tailwind CSS IntelliSense 
+- jsonwebtoken  ->  https://jwt.io/
+
+Definiciones:
+********************
+- Componentes: Son cada una de las partes que conforman una página web; estás partes se pueden reutilizar. En React un componente es una función o se crea como una función que siempre retorna una interfaz o una porción de interfaz.
+
+- Props: Los props son parámetros que se reciben en la función que crea el componente. Se pueden usar tipos de datos en los props para ayudar al programador. Debe instalar: props.types de https://www.npmjs.com/package/prop-types: --> npm i prop-types. Esto sólo permite definir el tipo de dato que se debe usar en cada caso nada más. 
+
+- Fetch-API: 
+  https://jsonplaceholder.typicode.com/
+  https://robohash.org/user2
+
+- Modulos de terceros: https://react-icons.github.io/react-icons/icons?name=md
+  https://mui.com/
+  npm install react-icons 
+
+- Arrays: https://robohash.org/
+
+- Hooks: https://legacy.reactjs.org/docs/hooks-intro.html
+  https://legacy.reactjs.org/docs/hooks-reference.html
+  Son funciones que provee reactjs para guardar, cambiar, etc., datos.
+  Son muchas funciones, pero vamos a usar algunas, entre ellas useState, useEffect, etc.
+
+**********************************************************************************************
+
